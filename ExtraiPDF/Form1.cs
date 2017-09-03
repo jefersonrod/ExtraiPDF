@@ -152,9 +152,7 @@ namespace ExtraiPDF
                             finishLine = finishLine + Extension.Length; //marca novamente mas adicionando o tamanho da string .pdf de 4 posições
                             lineLink = lineLink.Substring(0, finishLine); //agora tira até a parte do pdf, separando o link
                             startSubstring = line.IndexOf(Extension); //aqui marca onde esta o .pdf para depois tirar esta parte do line para remover a parte ja extraida
-
-
-                        
+                                                    
                             for (int i = 0; i < lineLink.Length; i++) //começa laço para ler a variavel lineLink toda
                             {
                                 tempContent = tempContent + lineLink[i]; //vai adicionando caracter a caracter a variavel tempContent
